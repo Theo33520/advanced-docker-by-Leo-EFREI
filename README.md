@@ -344,6 +344,8 @@ Prouvez que ça fonctionne avec une requête Web
 
 ```bash
 curl http://localhost:16789
+````
+```json 
 {
   "message": "Good, World!"
 }

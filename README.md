@@ -15,24 +15,11 @@ docker run -p 8000:8000 it4lik/meow-api:arm
 
 ☀️ Visitons
 
-```json
- * Serving Flask app 'app'
- * Debug mode: on
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:8000
- * Running on http://172.17.0.2:8000
-Press CTRL+C to quit
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 114-195-843
-```
 
 ```bash
 docker container ls -a && docker inspect <container ID>
 ```
-
-**R:** Voici les détails du conteneur en cours d'exécution :
+Voici les détails du conteneur en cours d'exécution :
 
 ```bash
 

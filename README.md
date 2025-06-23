@@ -299,4 +299,50 @@ Press CTRL+C to quit
 
 ```
 
+☀️ Remplacer le code app.py
 
+```python
+
+from os import getenv
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+LISTEN_PORT = getenv("LISTEN_PORT", 8000)
+
+@app.route("/")
+def hello_world():
+    return jsonify(message="Good, World!")
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=LISTEN_PORT, debug=True)
+
+```
+
+```bash
+docker run -p 8000:8000 -v $(pwd)/app.py:/app/app.py it4lik/meow-api:arm
+````
+
+```json
+
+curl http://localhost:8000
+{
+  "message": "Good, World!"
+}
+
+```
+
+
+☀️ Variable d'environnement
+
+```bash
+docker run -e LISTEN_PORT=16789 -p 16789:16789 -v $(pwd)/app.py:/app/app.py it4lik/meow-api:arm
+````
+
+
+Prouvez que ça fonctionne avec une requête Web
+
+curl http://localhost:16789
+{
+  "message": "Good, World!"
+}

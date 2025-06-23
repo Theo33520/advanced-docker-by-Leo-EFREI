@@ -281,7 +281,7 @@ docker logs <container ID>
 
 
 
-**R:** Voici les logs du conteneur en cours d'exécution :
+ Voici les logs du conteneur en cours d'exécution :
 
 ```json
 

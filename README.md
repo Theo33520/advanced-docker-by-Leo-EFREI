@@ -247,9 +247,8 @@ docker container ls -a && docker inspect <container ID>
 ```
 
 
-```bash
-visiter la route de l'API sur http://votre_ip:8000
-```
+
+Visiter la route de l'API sur http://votre_ip:8000
 
 ```json
 {
@@ -260,3 +259,4 @@ visiter la route de l'API sur http://votre_ip:8000
     }
 }
 ```
+

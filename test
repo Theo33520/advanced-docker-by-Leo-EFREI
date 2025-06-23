@@ -1,25 +1,3 @@
-# TP DOCKER 
-
-
-# PART I
-
-### Setup le projet 
-
-
-
-
-☀️ Lancer un container API python
-```bash
-docker run -p 8000:8000 it4lik/meow-api:arm
-```
-
-☀️ Visitons
-
-```bash
-docker container ls -a && docker inspect <container ID>
-```
-
-```json
 [
     {
         "Id": "253a3238cf8da327d43d5aaa9f57d805af4f15145967422c06ddf342f4d2bf2c",
@@ -244,19 +222,3 @@ docker container ls -a && docker inspect <container ID>
         }
     }
 ]
-```
-
-
-```bash
-visiter la route de l'API sur http://votre_ip:8000
-```
-
-```json
-{
-    "message": "Available routes",
-    "routes": {
-        "get_user_by_id": "http://10.100.0.136:8000/user/1",
-        "list_all_users": "http://10.100.0.136:8000/users"
-    }
-}
-```

@@ -342,7 +342,9 @@ docker run -e LISTEN_PORT=16789 -p 16789:16789 -v $(pwd)/app.py:/app/app.py it4l
 
 Prouvez que ça fonctionne avec une requête Web
 
+```bash
 curl http://localhost:16789
 {
   "message": "Good, World!"
 }
+```
